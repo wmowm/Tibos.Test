@@ -8,8 +8,8 @@ using Microsoft.Extensions.Options;
 
 namespace Tibos.Test.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
 
@@ -20,7 +20,6 @@ namespace Tibos.Test.Controllers
             this._options = options;
         }
 
-        // GET api/values
         [HttpGet("/")]
         public ActionResult<IEnumerable<string>> Get()
         {
