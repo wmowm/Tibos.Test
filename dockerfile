@@ -1,8 +1,8 @@
-FROM microsoft/dotnet:2.1.1-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.1.301-sdk AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR ../Tibos.Test
 COPY . .
 WORKDIR "/Tibos.Test"
