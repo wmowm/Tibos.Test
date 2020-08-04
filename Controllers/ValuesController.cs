@@ -23,7 +23,7 @@ namespace Tibos.Test.Controllers
         [HttpGet("/")]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] {$"14点钟的时候,我修改了代码,并提交!",$"{_options.Value.test}", $"{_options.Value.test2}" };
+            return new string[] {$"16点钟的时候,我修改了代码,并提交,成了!",$"{_options.Value.test}", $"{_options.Value.test2}" };
         }
 
 
